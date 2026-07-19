@@ -364,32 +364,32 @@
         .cerrar-modal { position: absolute; top: 20px; right: 30px; color: #d4af37; font-size: 45px; font-weight: bold; cursor: pointer; z-index: 2001; }
 
         /* MÚSICA */
-       .music-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 55px;
-    height: 55px;
-    /* Botón Rosado */
-    background: linear-gradient(135deg, #fffdc8, #ffdd00); 
-    border: 2px solid #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-    cursor: pointer;
-    z-index: 1000;
-    color: red !important; /* <--- AQUÍ CAMBIAMOS EL COLOR */
-    animation: pulse 2s infinite;
-}
-@keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
-.oculto { display: none !important; }
-.music-btn svg {
-    stroke: red !important;
-    fill: red !important;
-}
+      /* MÚSICA */
+        .music-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 55px;
+            height: 55px;
+            background: #E0B0FF; /* FONDO LILA */
+            border: 2px solid #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            cursor: pointer;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+        .oculto { display: none !important; }
+        
+        .music-btn svg {
+            fill: #6A0DAD !important; /* NOTA VIOLETA */
+            stroke: none;
+        }
 
         /* ========================================================
            ADAPTACIÓN EXCLUSIVA PARA CELULARES
@@ -438,10 +438,10 @@
         <source src="Música.mp3" type="audio/mpeg">
     </audio>
     <div id="btn-musica" class="music-btn" onclick="togglePlay()">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="red">
-        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"></path>
-    </svg>
-</div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+            <path d="M19.5,4.5 L10.5,6.5 C10.2,6.6 10,6.8 10,7.1 V15.8 C9.4,15.3 8.5,15 7.5,15 C5.6,15 4,16.1 4,17.5 C4,18.9 5.6,20 7.5,20 C9.4,20 11,18.9 11,17.5 V9.9 L19,8.1 V13.8 C18.4,13.3 17.5,13 16.5,13 C14.6,13 13,14.1 13,15.5 C13,16.9 14.6,18 16.5,18 C18.4,18 20,16.9 20,15.5 V5.1 C20,4.7 19.8,4.5 19.5,4.5 Z" />
+        </svg>
+    </div>
 
     <div class="app-container">
 
